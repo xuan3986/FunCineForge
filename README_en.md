@@ -18,7 +18,7 @@
 </div>
 
 **FunCineForge** is a fully open-source, locally deployed tool for producing multimodal speech datasets. It integrates batches of film or television data from the source into comprehensive data including text, speech, video, clues, timestamps, and other information for training our VTTS dubbing LLM.
-All pre-trained models have been uploaded to [Hugging Face](https://huggingface.co/xuan3986/FunCineForge). We will soon open-source television series datasets produced by FunCineForge.
+All pre-trained models have been uploaded to [Hugging Face](https://huggingface.co/xuan3986/FunCineForge). In addition, we open source the datasets produced by funcineforge.
 
 
 <a name="Quick-Start"></a>
@@ -38,8 +38,8 @@ python setup.py
 ```
 
 ### Datasets
-For reference, we will soon open-source a television dataset produced by FunCineForge. If you are producing your own data, 
-we suggest you refer to the following requirements when collecting relevant movies and television series.
+You can access [FunCineForge Datasets Website](https://xuan3986.github.io/FunCineForge/) to get our dataset. If you want to produce your own data, 
+we recommend that you refer to the following requirements to collect the corresponding movies and television series.
 
 1. Video source: Television series or movies, non documentaries, more monologues or dialogue scenes, clear and unobstructed faces (such as without masks and veils).
 2. Voice requirements: standard pronunciation, clear articulation and prominent voice. Avoid materials with too much dialect, background noise or strong oral sense.
@@ -88,7 +88,7 @@ python build_datasets.py --root_dir datasets/clean/zh --out_dir datasets/clean -
 ## Recent Updates 🔨
 
 - 2025/12/18 FunCineForge source code is online! 🔥
-- 2025/12/19 The dataset is open source! 🔥
+- 2025/12/19 The [dataset](https://xuan3986.github.io/FunCineForge/) is open source! 🔥
 
 
 

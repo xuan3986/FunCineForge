@@ -19,7 +19,7 @@
 
 **FunCineForge**是一款完全开源、本地部署的全流程生产多模态语音数据集工具，实现从源头批量影视数据到
 文本、语音、视频、线索、时间戳等信息的全模态数据，用于我们 VTTS 影视配音大模型的训练。
-所有的预训练模型均已上传到 [Hugging Face](https://huggingface.co/xuan3986/FunCineForge)。此外，我们即将开源由 FunCineForge 生产的影视剧数据集。
+所有的预训练模型均已上传到 [Hugging Face](https://huggingface.co/xuan3986/FunCineForge)。此外，我们开源了由 FunCineForge 生产的数据集。
 
 
 <a name="快速开始"></a>
@@ -39,7 +39,7 @@ python setup.py
 ```
 
 ### 数据集
-作为参考，我们即将开源一部由 FunCineForge 生产的影视数据集，如您自行生产数据，我们建议您参考下面的要求收集相应的影视剧。
+您可以访问 [FunCineForge Datasets](https://xuan3986.github.io/FunCineForge/) 网址来获取我们的数据集。如果您想自行生产数据，我们建议您参考下面的要求收集相应的影视剧。
 
 1. 视频来源：电视剧或电影，非纪录片，人物独白或对话场景较多，人脸清晰且无遮挡（如无面罩、面纱）。
 2. 语音要求：发音标准，吐字清晰，人声突出。避免方言、背景噪音过大或口语感过强的素材。
@@ -88,7 +88,7 @@ python build_datasets.py --root_dir datasets/clean/zh --out_dir datasets/clean -
 ## 近期更新 🔨
 
 - 2025/12/18 FunCineForge 源代码上线！🔥
-- 2025/12/19 数据集开源！🔥
+- 2025/12/19 [数据集](https://xuan3986.github.io/FunCineForge/)开源！🔥
 
 
 <a name="社区交流"></a>
