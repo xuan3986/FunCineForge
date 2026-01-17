@@ -22,7 +22,7 @@
 
 <a name="数据集&样例"></a>
 ## 数据集 & 样例 🎬
-您可以访问 [https://xuan3986.github.io/FunCineForge/](https://xuan3986.github.io/FunCineForge/) 获取我们的数据集样本和演示样例。
+您可以访问 [https://anonymous.4open.science/w/FunCineForge/](https://anonymous.4open.science/w/FunCineForge/) 获取我们的数据集样本和演示样例。
 
 <a name="数据集工具"></a>
 ## 数据集工具 🔨
@@ -31,8 +31,7 @@
 
 FunCineForge 的运行仅依赖于一个 Python 环境。
 ```shell
-# 克隆 FunCineForge 仓库
-git clone git@github.com:xuan3986/FunCineForge.git
+# Conda
 conda create -n FunCineForge python=3.8.20 -y && conda activate FunCineForge
 sudo apt-get install ffmpeg
 # 初始化设置

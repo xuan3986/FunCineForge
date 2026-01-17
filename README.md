@@ -22,7 +22,7 @@
 
 <a name="Dataset&Demo"></a>
 ## Dataset & Demo 🎬
-You can access [https://xuan3986.github.io/FunCineForge/](https://xuan3986.github.io/FunCineForge/) to get our dataset samples and demo samples. 
+You can access [https://anonymous.4open.science/w/FunCineForge/](https://anonymous.4open.science/w/FunCineForge/) to get our dataset samples and demo samples. 
 
 
 <a name="Dataset-Toolkit"></a>
@@ -33,7 +33,6 @@ You can access [https://xuan3986.github.io/FunCineForge/](https://xuan3986.githu
 FunCineForge only relies on a Python environment to run.
 ```shell
 # Conda
-git clone git@github.com:xuan3986/FunCineForge.git
 conda create -n FunCineForge python=3.8.20 -y && conda activate FunCineForge
 sudo apt-get install ffmpeg
 # Initial settings
