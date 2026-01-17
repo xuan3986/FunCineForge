@@ -14,8 +14,7 @@
 <h4><a href="#Dataset&Demo">Dataset & Demo</a>
 ｜<a href="#Dataset-Toolkit">Dataset Toolkit</a>
 ｜<a href="#Dubbing-Model">Dubbing Model</a>
-｜<a href="#Recent-Updates">Recent Updates</a>
-｜<a href="#Comminicate">Comminicate</a>
+｜<a href="#Declare">Declare</a>
 </h4>
 </div>
 
@@ -23,7 +22,7 @@
 
 <a name="Dataset&Demo"></a>
 ## Dataset & Demo 🎬
-You can access this [Website]() to get our dataset samples and demo samples. 
+You can access [https://xuan3986.github.io/FunCineForge/](https://xuan3986.github.io/FunCineForge/) to get our dataset samples and demo samples. 
 
 
 <a name="Dataset-Toolkit"></a>
@@ -44,7 +43,7 @@ python setup.py
 
 ### Data collection
 If you want to produce your own data, 
-we recommend that you refer to the following requirements to collect the corresponding movies and television series.
+we recommend that you refer to the following requirements to collect the corresponding movies or television series.
 
 1. Video source: TV dramas or movies, non documentaries, with more monologues or dialogue scenes, clear and unobstructed faces (such as without masks and veils).
 2. Speech Requirements: Standard pronunciation, clear articulation, prominent human voice. Avoid materials with strong dialects, excessive background noise, or strong colloquialism.
@@ -92,30 +91,13 @@ python build_datasets.py --root_dir datasets/clean/zh --out_dir datasets/clean -
 
 <a name="Dubbing-Model"></a>
 ## Dubbing Model ⚙️
+FunCineForge dubbing model source code and checkpoints will be open-sourced after the paper is accepted.
 
+<a name="Declare"></a>
+## Declare
 
+⚠️ This anonymous repository is only used for peer review as supplementary material.
 
-<a name="Recent-Updates"></a>
-## Recent Updates 🚀
-- 2025/12/18: FunCineForge toolkit source code is online! 🔥
-- 2026/01/17: Demo samples and dataset samples released. 🔥
+⚠️ This repository is released for academic/research purposes only
 
-
-
-<a name="Comminicate"></a>
-## Comminicate 🍟
-The FunCineForge open-source project is developed and maintained by the Tongyi Lab Speech Team and student from the National Engineering Research Center of Speech and Language Information Processing.
-We welcome you to participate in discussions on FunCineForge GitHub Issues or contact us for collaborative development.
-For any questions, you can contact the [developer](mailto:jxliu@mail.ustc.edu.cn).
-
-⭐ Hope you will support FunCineForge. Thank you.
-
-### Disclaimer
-
-This repository contains research artifacts:
-
-⚠️ Not an official Alibaba product
-
-⚠️ Released for academic/research purposes only
-
-⚠️ FunCineForge is subject to specific license terms
+⚠️ This repository is subject to specific license terms

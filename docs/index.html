@@ -33,9 +33,8 @@
         <a href="#abstract" class="nav-link text-sm font-medium" data-i18n="nav_abstract"></a>
         <a href="#dataset" class="nav-link text-sm font-medium" data-i18n="nav_dataset"></a>
         <a href="#demo" class="nav-link text-sm font-medium" data-i18n="nav_demo"></a>
-        <a href="#publication" class="nav-link text-sm font-medium" data-i18n="nav_pub"></a>
         <a href="#faq" class="nav-link text-sm font-medium" data-i18n="nav_faq"></a>
-        <a href="https://github.com/FunAudioLLM/FunCineForge" target="_blank">
+        <a href="https://anonymous.4open.science/r/FunCineForge/README.md" target="_blank">
             <i class="fab fa-github text-xl"></i>
         </a>
         <div class="flex border rounded-full overflow-hidden">
@@ -54,17 +53,6 @@
         <p class="text-2xl font-semibold text-gray-300" data-i18n="hero_line2"></p>
     </div>
     </header>
-
-    <section class="py-10 bg-white border-b border-gray-200">
-        <div class="max-w-5xl mx-auto px-4 flex items-center gap-4 mb-2">
-            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">NEWS</span>
-            <p class="text-sm text-gray-600" data-i18n="new1"></p>
-        </div>
-        <div class="max-w-5xl mx-auto px-4 flex items-center gap-4 mb-2">
-            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">NEWS</span>
-            <p class="text-sm text-gray-600" data-i18n="new2"></p>
-        </div>
-    </section>
 
 
     <section id="abstract" class="py-16 bg-white">
@@ -192,7 +180,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">hongloumeng.md5sum</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">hongloumeng.md5</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">159 B</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">CC-BY-NC 4.0</span></td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
@@ -1114,23 +1102,6 @@
         </div>
     </section>
 
-
-    <section id="publication" class="py-20 bg-gray-50">
-        <div class="max-w-5xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center" data-i18n="nav_pub"></h2>
-            <p class="mb-4 text-gray-700" data-i18n="cite_notice"></p>
-            
-            <div class="bg-slate-800 text-gray-300 p-6 rounded-lg font-mono text-sm overflow-x-auto shadow-inner">
-                <pre>Technical details will be released soon.</pre>
-            </div>
-            
-            <div class="mt-6 flex gap-4">
-                <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition"><i class="far fa-file-pdf"></i> Paper PDF</a>
-                <a href="https://github.com/FunAudioLLM/FunCineForge" class="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition"><i class="fab fa-github"></i> Code </a>
-            </div>
-        </div>
-    </section>
-
     <section id="faq" class="py-20 max-w-4xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Frequently Asked Questions</h2>
         
@@ -1147,7 +1118,7 @@
                     <p data-i18n="A1_2"></p>
                     
                     <div class="bg-slate-900 text-slate-200 p-3 rounded-md font-mono text-sm my-2 shadow-inner">
-                        <span class="text-green-400">$</span> md5sum -c hongloumeng.md5sum
+                        <span class="text-green-400">$</span> md5sum -c hongloumeng.md5
                     </div>
                 </div>
             </div>
@@ -1173,35 +1144,13 @@
                 </div>
             </div>
 
-            <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-                <h3 class="text-lg font-bold text-gray-900 mb-2" data-i18n="Q3"></h3>
-                  <p class="text-gray-600">
-                    <span data-i18n="A3_prefix"></span>
-                    <a
-                    href="https://github.com/FunAudioLLM/FunCineForge/issues"
-                    target="_blank"
-                    class="text-blue-600 hover:underline"
-                    data-i18n="A3_link_issues"
-                    ></a>
-                    <span data-i18n="A3_middle"></span>
-                    <a
-                    href="mailto:jxliu@mail.ustc.edu.cn"
-                    class="text-blue-600 hover:underline"
-                    data-i18n="A3_link_email"
-                    ></a>
-                    <span data-i18n="A3_suffix"></span>
-                  </p>
-            </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-gray-400 py-12 text-center">
+    <footer class="bg-slate-900 text-gray-400 py-6 text-center">
         <div class="max-w-7xl mx-auto px-4">
             <p class="mb-4 text-xl font-bold text-white">FunCineForge</p>
             <p class="text-sm mb-6">Exploring the End-to-end Production Toolkit for Large-scale Dubbing Datasets and Multimodal Dubbing Models for Diverse Cinematic Scenes.</p>
-            <div class="text-xs text-gray-600">
-                &copy; Alibaba's Tongyi Lab Speech Team & University of Science and Technology of China. All rights reserved. <br>
-            </div>
         </div>
     </footer>
 
@@ -1225,12 +1174,9 @@ const i18n = {
     nav_abstract:"摘要",
     nav_demo:"样例展示",
     nav_dataset:"数据集",
-    nav_pub:"发表",
     nav_faq:"FAQ",
     hero_line1:"探索大规模配音数据集的端到端生产工具",
     hero_line2:"和面向多样影视场景的多模态配音模型",
-    new1:"2025.12.18：FunCineForge 正式发布。",
-    new2:"2026.01.17：合成样例和数据集样例发布。",
     demo_desc:"合成样本与真实样本在四种影视场景下的对比展示",
     demo_desc2:"合成样本是由合成语音与真实的静音视频片段配对而成。",
     synthetic:"合成样本",
@@ -1243,7 +1189,6 @@ const i18n = {
     download:"下载",
     dataset_notice_title: "声明：",
     dataset_notice_text: "释放的部分数据集仅作参考，我们剔除了视频内容以保护版权，下载即代表您同意遵循我们的用户协议。",
-    cite_notice: "如果您使用了我们的数据集或代码，请引用以下论文：",
     Q1: "Q：数据集如何解压？",
     A1: "A：请使用 7zip 工具进行解压，命令如下：",
     A1_2: "请使用 MD5 进行文件校验确认文件完整性：",
@@ -1252,23 +1197,14 @@ const i18n = {
     q_1: "视频来源：电视剧或电影，非纪录片，人物独白或对话场景较多，人脸清晰且无遮挡（如无面罩、面纱）。",
     q_2: "语音要求：发音标准，吐字清晰，人声突出。避免方言、背景噪音过大或口语感过强的素材。",
     q_3: "画面要求：像素高，面部细节清晰，光线充足，避免极端阴暗或背光的场景。",
-    Q3: "Q: 如何反馈其他问题？",
-    A3_prefix: "A：您可以在 ",
-    A3_link_issues: "GitHub Issues",
-    A3_middle: " 中留言提问，或通过 ",
-    A3_link_email: "邮件",
-    A3_suffix: " 与开发者联系。"
   },
   en: {
     nav_abstract:"Abstract",
     nav_demo:"Demo Showcase",
     nav_dataset:"Dataset",
-    nav_pub:"Publication",
     nav_faq:"FAQ",
     hero_line1:"Exploring the End-to-end Production Toolkit for Large-scale Dubbing Datasets",
     hero_line2:"and Multimodal Dubbing Models for Diverse Cinematic Scenes",
-    new1:"2025.12.18: FunCineForge officially released.",
-    new2:"2026.01.17: Demo samples and dataset samples released.",
     demo_desc:"Comparison between synthesized and ground truth samples across four cinematic scenes,",
     demo_desc2:"where synthesized samples are formed by pairing synthesized speech with real silent video clips.",
     synthetic:"Synthesized Sample",
@@ -1281,7 +1217,6 @@ const i18n = {
     download:"Download",
     dataset_notice_title: "Notice:",
     dataset_notice_text: "The released dataset samples are for reference only. Video content has been removed to protect copyright. By downloading the data, you agree to comply with our usage agreement.",
-    cite_notice: "If you use our dataset or code, please cite the following paper:",
     Q1: "Q: How to decompress the dataset?",
     A1: "A: Please use the 7zip tool to decompress, the command is as follows:",
     A1_2: "Please use MD5 to verify the integrity of the files:",
@@ -1290,12 +1225,6 @@ const i18n = {
     q_1: "Video Source: TV dramas or movies, not documentaries, with more monologue or dialogue scenes, clear and unobstructed faces (e.g., no masks or veils).",
     q_2: "Speech Requirements: Standard pronunciation, clear articulation, prominent human voice. Avoid materials with strong dialects, excessive background noise, or strong colloquialism.",
     q_3: "Image Requirements: High resolution, clear facial details, sufficient lighting, avoiding extremely dark or strong backlit scenes.",
-    Q3: "Q: How to report other issues?",
-    A3_prefix: "A: You may leave your questions on ",
-    A3_link_issues: "GitHub Issues",
-    A3_middle: ", or contact the ",
-    A3_link_email: "developers via email",
-    A3_suffix: "."
   }
 };
 
