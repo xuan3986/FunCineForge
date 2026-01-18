@@ -18,11 +18,11 @@
 </h4>
 </div>
 
-**FunCineForge** contains an end-to-end dataset pipeline for producing large-scale dubbing datasets and an MLLM-based dubbing model designed for diverse cinematic scenes. Using this pipeline, we constructed the first large-scale Chinese television dubbing dataset, which includes rich annotations and diverse scenes. In monologue, narration, dialogue, and multi-speaker scenes, our dubbing model consistently outperforms state-of-the-art methods in terms of audio quality, lip-sync, timbre transition, and instruction following.
+**FunCineForge** contains an end-to-end dataset pipeline for producing large-scale dubbing datasets and an MLLM-based dubbing model designed for diverse cinematic scenes. Using this pipeline, we constructed the first large-scale Chinese television dubbing dataset CineDub-CN, which includes rich annotations and diverse scenes. In monologue, narration, dialogue, and multi-speaker scenes, our dubbing model consistently outperforms state-of-the-art methods in terms of audio quality, lip-sync, timbre transition, and instruction following.
 
 <a name="Dataset&Demo"></a>
 ## Dataset & Demo 🎬
-You can access [https://anonymous.4open.science/w/FunCineForge/](https://anonymous.4open.science/w/FunCineForge/) to get our dataset samples and demo samples. 
+You can access [https://anonymous.4open.science/w/FunCineForge/](https://anonymous.4open.science/w/FunCineForge/) to get our CineDub-CN dataset samples and demo samples. 
 
 
 <a name="Dataset-Pipeline"></a>
