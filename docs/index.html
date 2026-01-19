@@ -210,6 +210,8 @@
             <h2 class="text-3xl font-bold text-gray-900 mb-3" data-i18n="nav_demo"></h2>
             <p class="text-xl text-gray-600" data-i18n="demo_desc"></p>
             <p class="text-xl text-gray-600" data-i18n="demo_desc2"></p>
+            <p class="text-xl text-gray-600" data-i18n="demo_desc3"></p>
+            <p class="text-xl text-gray-600" data-i18n="demo_desc4"></p>
             </div>
 
             <!-- Scene Tabs -->
@@ -233,6 +235,11 @@
                     class="scene-btn px-5 py-2 rounded-full text-sm font-semibold bg-white text-gray-700 border border-gray-300 hover:bg-gray-100 transition"
                     data-scene="multi">
                     Multi-Speaker
+                </button>
+                <button
+                    class="scene-btn px-5 py-2 rounded-full text-sm font-semibold bg-white text-gray-700 border border-gray-300 hover:bg-gray-100 transition"
+                    data-scene="timbre">
+                    Timbre Cloning
                 </button>
                 <button
                     class="scene-btn px-5 py-2 rounded-full text-sm font-semibold bg-white text-gray-700 border border-gray-300 hover:bg-gray-100 transition"
@@ -820,12 +827,12 @@
                         <div class="mt-2 text-sm text-gray-700 leading-relaxed">
                             <span class="font-semibold text-gray-900">Clue + Text:</span>
                             “&lt;|startofclue|&gt;一位老年男性对战事失利表达忧虑与不祥之感，语气沉重。另一位中年男性则沉稳劝慰，以豁达的口吻表明胜败乃兵家常事，情绪从担忧转为平静与开导。&lt;|endofclue|&gt;
-                            六出祁山，首战不利。预兆，不祥啊！丞相不必焦虑，胜败乃兵家常事。”
+                            六出祁山，首战不利。预兆，咳咳，不祥啊！丞相不必焦虑，胜败乃兵家常事。”
                         </div>
                         <div class="mt-2 text-sm text-gray-700 leading-relaxed">
                             <span class="font-semibold text-gray-900">Clue + Text (Translation):</span>
                             "&lt;|startofclue|&gt;An elderly man expressed his anxiety and foreboding about the military defeat, speaking in a heavy tone. Another middle-aged man, however, calmly consoled him, stating with an open-minded tone that victory and defeat are common occurrences in warfare, shifting the mood from concern to calmness and enlightenment.&lt;|endofclue|&gt;
-                            Six expeditions to Qishan, with the first battle being unfavorable. This is an omen, an ominous sign! Prime Minister need not be anxious, for victory and defeat are common occurrences in warfare."
+                            Six expeditions to Qishan, with the first battle being unfavorable. An omen, cough, an ominous sign! Prime Minister need not be anxious, for victory and defeat are common occurrences in warfare."
                         </div>
                     </div>
 
@@ -1129,6 +1136,219 @@
                 </div>
             </div>
 
+            <div class="scene-content hidden" id="scene-timbre">
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-12">
+                    <div class="mb-10">
+                        <h4 class="text-center text-xl font-bold text-purple-600 mb-4">
+                            Reference Audio (Timbre)
+                        </h4>
+                        <div class="flex justify-center">
+                            <audio controls class="w-full md:w-2/3"><source src="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/FunCineForge/timbre-cloning/reference.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="mt-2 text-sm text-gray-700 leading-relaxed text-center">
+                            <span class="font-semibold text-gray-900">Text:</span>
+                            “对吧，那它的用处可多了，比如说在智能设备上做语音播报。”
+                        </div>
+                        <div class="mt-2 text-sm text-gray-700 leading-relaxed text-center">
+                            <span class="font-semibold text-gray-900">Text (Translation):</span>
+                            "Right. It has many uses, such as providing voice announcements on smart devices."
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6 relative">
+                        <h4 class="text-center text-2xl font-bold text-blue-600 tracking-wide" data-i18n="synthetic"></h4>
+                        <h4 class="text-center text-2xl font-bold text-green-600 tracking-wide" data-i18n="real"></h4>
+                        <div class="hidden md:block absolute left-1/2 top-0 h-full w-px bg-gray-200"></div>
+                    </div>
+
+                    <div class="mb-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+                            <div class="rounded-xl overflow-hidden demo-video aspect-video border border-blue-100">
+                            <video controls class="w-full h-full object-contain"><source src="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/FunCineForge/timbre-cloning/1_cloning.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="hidden md:block absolute left-1/2 top-0 h-full w-px bg-gray-200"></div>
+                            <div class="rounded-xl overflow-hidden demo-video aspect-video border border-green-100">
+                            <video controls class="w-full h-full object-contain"><source src="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/FunCineForge/timbre-cloning/1_gt.mp4" type="video/mp4"></video>
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mt-4 text-sm text-gray-700">
+                            <span class="font-semibold text-gray-900">Type:</span>
+                            narration (off shot speaker)
+                        </div>
+
+                        <!-- Clue + Text -->
+                        <div class="mt-2 text-sm text-gray-700 leading-relaxed">
+                            <span class="font-semibold text-gray-900">Clue + Text:</span>
+                            “&lt;|startofclue|&gt;一位青年男性以轻松自信的语调介绍商品，声音洪亮且专业，表达对商品价值的肯定，情感趋于中性。&lt;|endofclue|&gt;
+                            这把扇子是本店的镇店之宝，拿来送人再好不过了。”
+                        </div>
+                        <div class="mt-2 text-sm text-gray-700 leading-relaxed">
+                            <span class="font-semibold text-gray-900">Clue + Text (Translation):</span>
+                            "&lt;|startofclue|&gt;A young male introduces the product with a relaxed and confident tone, his voice loud and professional, expressing affirmation of the product's value, with a neutral emotional tone.&lt;|endofclue|&gt;
+                            This fan is the crown jewel of our store, and it would be perfect for gifting."
+                        </div>
+                    </div>
+
+                    <div class="mb-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+                            <div class="rounded-xl overflow-hidden demo-video aspect-video border border-blue-100">
+                            <video controls class="w-full h-full object-contain"><source src="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/FunCineForge/timbre-cloning/2_cloning.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="hidden md:block absolute left-1/2 top-0 h-full w-px bg-gray-200"></div>
+                            <div class="rounded-xl overflow-hidden demo-video aspect-video border border-green-100">
+                            <video controls class="w-full h-full object-contain"><source src="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/FunCineForge/timbre-cloning/2_gt.mp4" type="video/mp4"></video>
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mt-4 text-sm text-gray-700">
+                            <span class="font-semibold text-gray-900">Type:</span>
+                            narration (storytelling)
+                        </div>
+
+                        <!-- Clue + Text -->
+                        <div class="mt-2 text-sm text-gray-700 leading-relaxed">
+                            <span class="font-semibold text-gray-900">Clue + Text:</span>
+                            “&lt;|startofclue|&gt;一位青年男性，声音清晰稳定，以平静叙述的语调描述了两位神仙在仙山之间高谈阔论的场景。情感为中性、平稳，带有故事的引入感。&lt;|endofclue|&gt;
+                            当日，有两位神仙，时而凭风遨游，时而高谈阔论，来往于仙山缥缈之间，说这些真假有无之事。”
+                        </div>
+                        <div class="mt-2 text-sm text-gray-700 leading-relaxed">
+                            <span class="font-semibold text-gray-900">Clue + Text (Translation):</span>
+                            "&lt;|startofclue|&gt;A young male, with a clear and steady voice, described the scene of two immortals engaging in profound discussions between the fairy mountains in a calm narrative tone. 
+                            The emotion is neutral and steady, with a sense of introduction to the story.&lt;|endofclue|&gt;
+                            On that day, there were two immortals, sometimes soaring with the wind, sometimes engaging in profound discussions, traveling between the ethereal fairy mountains, discussing matters of truth and falsity, existence and non-existence."
+                        </div>
+                    </div>
+
+                    <div class="mb-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+                            <div class="rounded-xl overflow-hidden demo-video aspect-video border border-blue-100">
+                            <video controls class="w-full h-full object-contain"><source src="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/FunCineForge/timbre-cloning/3_cloning.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="hidden md:block absolute left-1/2 top-0 h-full w-px bg-gray-200"></div>
+                            <div class="rounded-xl overflow-hidden demo-video aspect-video border border-green-100">
+                            <video controls class="w-full h-full object-contain"><source src="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/FunCineForge/timbre-cloning/3_gt.mp4" type="video/mp4"></video>
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mt-4 text-sm text-gray-700">
+                            <span class="font-semibold text-gray-900">Type:</span>
+                            monologue (dark face)
+                        </div>
+
+                        <!-- Clue + Text -->
+                        <div class="mt-2 text-sm text-gray-700 leading-relaxed">
+                            <span class="font-semibold text-gray-900">Clue + Text:</span>
+                            “&lt;|startofclue|&gt;一位青年男性以沉稳有力的语调，阐述了他对事物的判断哲学，从不知道到明确提出自己的定理，语气坚定，透露出一种笃信和深思熟虑的意味。&lt;|endofclue|&gt;
+                            我虽然不知道你说的那个什么假说，但是我知道，我知道一个终极定理。那就是：邪乎到家必有鬼！”
+                        </div>
+                        <div class="mt-2 text-sm text-gray-700 leading-relaxed">
+                            <span class="font-semibold text-gray-900">Clue + Text (Translation):</span>
+                            "&lt;|startofclue|&gt;A young man expounded on his philosophy of judgment towards things with a steady and powerful tone, moving from not knowing to explicitly proposing his own theorems. 
+                            His tone was firm, revealing a sense of conviction and deep consideration.&lt;|endofclue|&gt; 
+                            Although I don't know about the hypothesis you mentioned, I do know one ultimate theorem. That is: Where there's something fishy, there must be a ghost!"
+                        </div>
+                    </div>
+
+                    <div class="mb-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+                            <div class="rounded-xl overflow-hidden demo-video aspect-video border border-blue-100">
+                            <video controls class="w-full h-full object-contain"><source src="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/FunCineForge/timbre-cloning/4_cloning.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="hidden md:block absolute left-1/2 top-0 h-full w-px bg-gray-200"></div>
+                            <div class="rounded-xl overflow-hidden demo-video aspect-video border border-green-100">
+                            <video controls class="w-full h-full object-contain"><source src="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/FunCineForge/timbre-cloning/4_gt.mp4" type="video/mp4"></video>
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mt-4 text-sm text-gray-700">
+                            <span class="font-semibold text-gray-900">Type:</span>
+                            monologue (frequent shot changes)
+                        </div>
+
+                        <!-- Clue + Text -->
+                        <div class="mt-2 text-sm text-gray-700 leading-relaxed">
+                            <span class="font-semibold text-gray-900">Clue + Text:</span>
+                            “&lt;|startofclue|&gt;一位青年男性臣子附和华妃的观点，强调与皇帝共同用餐的珍贵，语气沉稳而得体。&lt;|endofclue|&gt;
+                            华妃说得对啊，臣难得与皇上一桌用餐，一家子团聚是不该议论其他！”
+                        </div>
+                        <div class="mt-2 text-sm text-gray-700 leading-relaxed">
+                            <span class="font-semibold text-gray-900">Clue + Text (Translation):</span>
+                            "&lt;|startofclue|&gt;A young male courtier echoed the view of Consort Hua, emphasizing the preciousness of dining with the emperor, speaking in a calm and appropriate tone.&lt;|endofclue|&gt; 
+                            Consort Hua is right. It's rare for courtiers to dine with the emperor at the same table. When the family gathers, we shouldn't discuss other matters!"
+                        </div>
+                    </div>
+
+                    <div class="mb-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+                            <div class="rounded-xl overflow-hidden demo-video aspect-video border border-blue-100">
+                            <video controls class="w-full h-full object-contain"><source src="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/FunCineForge/timbre-cloning/5_cloning.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="hidden md:block absolute left-1/2 top-0 h-full w-px bg-gray-200"></div>
+                            <div class="rounded-xl overflow-hidden demo-video aspect-video border border-green-100">
+                            <video controls class="w-full h-full object-contain"><source src="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/FunCineForge/timbre-cloning/5_gt.mp4" type="video/mp4"></video>
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mt-4 text-sm text-gray-700">
+                            <span class="font-semibold text-gray-900">Type:</span>
+                            dialogue (speaker occlusion)
+                        </div>
+
+                        <!-- Clue + Text -->
+                        <div class="mt-2 text-sm text-gray-700 leading-relaxed">
+                            <span class="font-semibold text-gray-900">Clue + Text:</span>
+                            “&lt;|startofclue|&gt;第一位男性说话人以柔和轻松的语调询问如何为薛妹妹庆生，表达出寻求建议的情绪。第二位男性说话人以沉稳低声的语气给出解决方案，情感上较为平稳，带有反问的肯定意味。整体对话情感从询问到给出建议。&lt;|endofclue|&gt;
+                            二十一是薛妹妹的生日，你说该怎么个办法？往年怎么给林妹妹办的，今年也照样给薛妹妹办，不就是了？”
+                        </div>
+                        <div class="mt-2 text-sm text-gray-700 leading-relaxed">
+                            <span class="font-semibold text-gray-900">Clue + Text (Translation):</span>
+                            "&lt;|startofclue|&gt;The first male speaker asked in a gentle and relaxed tone how to celebrate Sister Xue's birthday, expressing a mood of seeking advice.
+                            The second male speaker gave a solution in a calm and low tone, with a relatively stable emotion and a affirmative tone of rhetorical question. 
+                            The overall emotional tone of the dialogue shifts from inquiry to suggestion.&lt;|endofclue|&gt;
+                            Twenty-one is Sister Xue's birthday. What do you think we should do? We celebrated Sister Lin's birthday in previous years, so why not do the same for Sister Xue this year?"
+                        </div>
+                    </div>
+
+                    <div class="mb-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+                            <div class="rounded-xl overflow-hidden demo-video aspect-video border border-blue-100">
+                            <video controls class="w-full h-full object-contain"><source src="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/FunCineForge/timbre-cloning/6_cloning.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="hidden md:block absolute left-1/2 top-0 h-full w-px bg-gray-200"></div>
+                            <div class="rounded-xl overflow-hidden demo-video aspect-video border border-green-100">
+                            <video controls class="w-full h-full object-contain"><source src="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/FunCineForge/timbre-cloning/6_gt.mp4" type="video/mp4"></video>
+                            </div>
+                        </div>
+
+                         <!-- Description -->
+                        <div class="mt-4 text-sm text-gray-700">
+                            <span class="font-semibold text-gray-900">Type:</span>
+                            dialogue (low resolution)
+                        </div>
+
+                        <!-- Clue + Text -->
+                        <div class="mt-2 text-sm text-gray-700 leading-relaxed">
+                            <span class="font-semibold text-gray-900">Clue + Text:</span>
+                            “&lt;|startofclue|&gt;一位青年男性对战事失利表达忧虑与不祥之感，语气沉重低沉。另一位青年男性则沉稳劝慰，以豁达洪亮的口吻表明胜败乃兵家常事，情绪从担忧转为平静与开导。&lt;|endofclue|&gt;
+                            六出祁山，首战不利。预兆，咳咳，不祥啊！丞相不必焦虑，胜败乃兵家常事。”
+                        </div>
+                        <div class="mt-2 text-sm text-gray-700 leading-relaxed">
+                            <span class="font-semibold text-gray-900">Clue + Text (Translation):</span>
+                            "&lt;|startofclue|&gt;An young man expressed his anxiety and foreboding about the military defeat, speaking in a heavy and low tone. 
+                            Another middle-aged man, however, calmly consoled him, stating in a broad-minded and resounding tone that victory and defeat are common occurrences in warfare, shifting the mood from concern to calmness and enlightenment.&lt;|endofclue|&gt;
+                            Six expeditions to Qishan, with the first battle being unfavorable. An omen, cough, an ominous sign! Prime Minister need not be anxious, for victory and defeat are common occurrences in warfare."
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="scene-content hidden" id="scene-other">
                 <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-12">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6 relative">
@@ -1370,8 +1590,10 @@ const i18n = {
     nav_faq:"FAQ",
     hero_line1:"探索大规模配音数据集的端到端生产流程",
     hero_line2:"和面向多样影视场景的多模态配音模型",
-    demo_desc:"合成样本与真实样本在四种影视场景下的对比展示",
+    demo_desc:"合成样本与真实样本在四种影视场景下的对比展示，",
     demo_desc2:"合成样本是由合成语音与真实的静音视频片段配对而成。",
+    demo_desc3:"“音色克隆”小节展示了使用同一参考音频进行音色克隆的几个示例，",
+    demo_desc4:"“其他”小节列举了一些特殊案例。",
     synthetic:"合成样本",
     real:"真实样本",
     dataset_sample:"数据样例",
@@ -1399,7 +1621,9 @@ const i18n = {
     hero_line1:"Exploring the End-to-end Production Pipeline for Large-scale Dubbing Datasets",
     hero_line2:"and Multimodal Dubbing Models for Diverse Cinematic Scenes",
     demo_desc:"Comparison between synthesized and ground truth samples across four cinematic scenes,",
-    demo_desc2:"where synthesized samples are formed by pairing synthesized speech with real silent video clips.",
+    demo_desc2:"where synthesized samples are created by pairing synthesized speech with real silent video clips.",
+    demo_desc3:"“Timbre Cloning” section shows several examples of timbre cloning using the same reference audio,",
+    demo_desc4:"and “Other” section lists several special cases.",
     synthetic:"Synthesized Sample",
     real:"Ground Truth",
     dataset_sample:"Dataset Sample",
