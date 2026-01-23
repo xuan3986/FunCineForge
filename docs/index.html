@@ -1145,9 +1145,7 @@
             <div class="scene-content hidden" id="scene-timbre">
                 <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-12">
                     <div class="mb-10">
-                        <h4 class="text-center text-xl font-bold text-purple-600 mb-4">
-                            Reference Audio (Timbre)
-                        </h4>
+                        <h4 class="text-center text-xl font-bold text-purple-600 mb-4" data-i18n="reference_audio"></h4>
                         <div class="flex justify-center">
                             <audio controls class="w-full md:w-2/3"><source src="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/FunCineForge/timbre-cloning/reference.wav" type="audio/wav"></audio>
                         </div>
@@ -1351,6 +1349,13 @@
                             Six expeditions to Qishan, with the first battle being unfavorable. An omen, cough, an ominous sign! Prime Minister need not be anxious, for victory and defeat are common occurrences in warfare."
                         </div>
                     </div>
+                    <div class="mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded-md">
+                        <p class="text-sm text-yellow-800">
+                            <i class="fas fa-exclamation-triangle mr-2"></i>
+                            <strong data-i18n="dataset_notice_title"></strong>
+                            <span data-i18n="timbre_notice_text"></span>
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -1519,6 +1524,13 @@
                             Although Ah Ge has two younger brothers, they are raised separately, so he is inevitably lonely. With an Empress like you, I feel relieved. 
                             I am powerless, unable to raise Ah Ge to adulthood for the Emperor. My sister died giving birth to Ah Ge's younger brother."
                         </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded-md">
+                        <p class="text-sm text-yellow-800">
+                            <i class="fas fa-exclamation-triangle mr-2"></i>
+                            <strong data-i18n="dataset_notice_title"></strong>
+                            <span data-i18n="clue_notice_text"></span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -1772,6 +1784,7 @@ const i18n = {
     demo_desc5:"“其他”小节列举了一些特殊案例。",
     synthetic:"合成样本",
     real:"真实样本",
+    reference_audio:"参考音频（音色）",
     clue1:"合成样本（线索 1）",
     clue2:"合成样本（线索 2）",
     dataset_sample:"数据样例",
@@ -1782,6 +1795,8 @@ const i18n = {
     download:"下载",
     dataset_notice_title: "声明：",
     dataset_notice_text: "发布的单部影视剧数据集样例仅作参考，我们剔除了视频内容以保护版权，下载即代表您同意遵循我们的用户协议。",
+    timbre_notice_text: "参考音频应与视觉中说话人侧写，如性别、年龄，保证潜在一致性。",
+    clue_notice_text: "线索应与参考音频、面部和文本应保证潜在一致性，实验发现语音音色和风格更多取决于参考音频，情感和语气部分依赖线索辅助信息。",
     Q1: "Q：数据集如何解压？",
     A1: "A：请使用 7zip 工具进行解压，命令如下：",
     A1_2: "请使用 MD5 进行文件校验确认文件完整性：",
@@ -1805,6 +1820,7 @@ const i18n = {
     demo_desc5:"and “Other” section lists several special cases.",
     synthetic:"Synthesized Sample",
     real:"Ground Truth",
+    reference_audio:"Reference Audio (Timbre)",
     clue1:"Synthesized Sample (Clue 1)",
     clue2:"Synthesized Sample (Clue 2)",
     dataset_sample:"Dataset Sample",
@@ -1815,6 +1831,8 @@ const i18n = {
     download:"Download",
     dataset_notice_title: "Notice:",
     dataset_notice_text: "The released dataset samples of a single TV drama are for reference only. Video content has been removed to protect copyright. By downloading the data, you agree to comply with our usage agreement.",
+    timbre_notice_text: "The reference audio should maintain potential consistency with speaker's profile such as gender and age in the visual content.",
+    clue_notice_text: "Clues should maintain potential consistency with reference audio, facial features, and text. Experiments show that voice timbre and style are more dependent on the reference audio, while emotion and tone rely partially on clue auxiliary information.",
     Q1: "Q: How to decompress the dataset?",
     A1: "A: Please use the 7zip tool to decompress, the command is as follows:",
     A1_2: "Please use MD5 to verify the integrity of the files:",
