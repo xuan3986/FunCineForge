@@ -36,7 +36,7 @@ You can access [https://anonymous.4open.science/w/FunCineForge/](https://anonymo
 FunCineForge dataset pipeline toolkit only relies on a Python environment to run.
 ```shell
 # Conda
-conda create -n FunCineForge python=3.8.20 -y && conda activate FunCineForge
+conda create -n FunCineForge python=3.10 -y && conda activate FunCineForge
 sudo apt-get install ffmpeg
 # Initial settings
 cd FunCineForge
