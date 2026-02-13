@@ -30,7 +30,7 @@ bash run.sh -stage 1 --stop_stage 2 --input datasets/raw_zh/红楼梦/01.mp4 --o
 
 English:
 ```
-bash run.sh -stage 1 --stop_stage 2 --input datasets/raw_zh/小谢尔顿第一季/01.mp4 --output datasets/clean/zh --lang en --device gpu
+bash run.sh -stage 1 --stop_stage 2 --input datasets/raw_en/小谢尔顿第一季/01.mp4 --output datasets/clean/en --lang en --device gpu
 ```
 
 ## Illustrate
