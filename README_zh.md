@@ -50,10 +50,9 @@ python setup.py
 
 ### 使用方法
 
-- [1] 将视频格式标准化为mp4；裁剪长视频的开头和结尾。（默认是从每部分裁剪5秒。）
+- [1] 将视频格式、名称标准化；裁剪长视频的片头片尾；提取裁剪后视频的音频。（默认是从起止各裁剪 10 秒。）
 ```shell
-python normalize_mp4.py --root datasets/raw_zh
-python trim_video.py --root datasets/raw_zh
+python normalize_trim.py --root datasets/raw_zh --intro 10 --outro 10
 ```
 
 - [2] [Speech Separation](./speech_separation/README.md). 音频进行人声乐声分离。
